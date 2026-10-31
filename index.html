@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Магазин камней</title>
+    <!-- Заменили ссылку на unpkg -->
+    <link href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Камни</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row align-items-center mb-5 g-4">
+            <div class="col-12 col-lg-6">
+                <h1 class="display-5 fw-bold">Учебный каталог камней</h1>
+                <p class="lead text-muted">Проект демонстрирует использование Bootstrap-сетки, адаптивных колонок и базовых компонентов.</p>
+                <a class="btn btn-primary btn-lg" href="catalog.html">Перейти в каталог</a>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <img src="https://cs6.livemaster.ru/storage/e7/f3/16010c7eff672c072117bc1491xf.jpg" 
+                     class="img-fluid rounded shadow-sm w-100 hero-img" 
+                     alt="Красивый камень">
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4">Популярные товары</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://avatars.mds.yandex.net/i?id=58567837ef26dea9fe3838b6d7ebc640ea1b782c-5487031-images-thumbs&n=13" class="card-img-top" alt="Камень дешевый">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h3 class="h5 card-title">Камень дешевый</h3>
+                            <span class="badge bg-success">Новинка</span>
+                        </div>
+                        <p class="card-text text-muted">Неинтересный, скучный, бесформенный.</p>
+                        <p class="fw-bold fs-5 mt-auto">1000 руб.</p>
+                        <a href="product.html?id=1" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://i.pinimg.com/originals/68/7c/38/687c38bbaa4721fd4ca36ad91a3ef34c.jpg?nii=t" class="card-img-top" alt="Камень средний">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h3 class="h5 card-title">Камень средний</h3>
+                            <span class="badge bg-warning text-dark">Хит</span>
+                        </div>
+                        <p class="card-text text-muted">Имеет отчетливую форму, можно поиграть с ним.</p>
+                        <p class="fw-bold fs-5 mt-auto">20000 руб.</p>
+                        <a href="product.html?id=2" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://cs6.livemaster.ru/storage/e7/f3/16010c7eff672c072117bc1491xf.jpg" class="card-img-top" alt="Камень дорогой">
+                    <div class="card-body d-flex flex-column">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <h3 class="h5 card-title">Камень дорогой</h3>
+                            <span class="badge bg-danger">Скидка</span>
+                        </div>
+                        <p class="card-text text-muted">Идеальная форма камня, крутая эстетика.</p>
+                        <p class="fw-bold fs-5 mt-auto">1000000 руб.</p>
+                        <a href="product.html?id=3" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Учебный проект КР №2. Bootstrap.</p>
+        </div>
+    </footer>
+
+    <!-- Заменили ссылку на unpkg -->
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
